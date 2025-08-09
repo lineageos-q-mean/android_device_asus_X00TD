@@ -3,7 +3,7 @@
 export TZ=Asia/Jakarta
 
 rm -rf kernel/asus/sdm660
-git clone --single-branch --recursive https://github.com/Kneba/kernel_asus_sdm660 -b clo-ksun kernel/asus/sdm660
+git clone --single-branch --recursive https://github.com/strongreasons/android_kernel_asus_sdm660 -b clo kernel/asus/sdm660
 #cd kernel/asus/sdm660
 #git revert 079a547168e74a57b7431652554eddef0e901a59 --no-edit
 #cd ../../..
