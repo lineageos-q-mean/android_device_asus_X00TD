@@ -3,10 +3,11 @@
 export TZ=Asia/Jakarta
 
 rm -rf kernel/asus/sdm660
-git clone --single-branch --recursive https://github.com/strongreasons/android_kernel_asus_sdm660 -b folk kernel/asus/sdm660
-#cd kernel/asus/sdm660
-#git revert 079a547168e74a57b7431652554eddef0e901a59 --no-edit
-#cd ../../..
+git clone --single-branch https://github.com/strongreasons/android_kernel_asus_sdm660 -b r44 --depth=1 kernel/asus/sdm660
+
+cd kernel/asus/sdm660
+curl -LSs "https://raw.githubusercontent.com/Sorayukii/KernelSU-Next/stable/kernel/setup.sh" | bash -s hookless
+cd -
 
 # Force Using KSU
 rm -rf system/extras/su
