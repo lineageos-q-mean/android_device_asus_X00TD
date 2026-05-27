@@ -15,9 +15,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# EAS powerhint
-EAS_POWERHINT_VARIANT := 636
-
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
