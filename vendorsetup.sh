@@ -3,7 +3,7 @@
 export TZ=Asia/Jakarta
 
 rm -rf kernel/asus/sdm660
-git clone --single-branch https://github.com/strongreasons/android_kernel_asus_sdm660 -b dark --depth=1 kernel/asus/sdm660
+git clone --single-branch https://github.com/Tiktodz/android_kernel_asus_sdm636 -b tzy --depth=1 kernel/asus/sdm660
 
 cd kernel/asus/sdm660
 curl -LSs "https://raw.githubusercontent.com/Sorayukii/KernelSU-Next/stable/kernel/setup.sh" | bash -s hookless
